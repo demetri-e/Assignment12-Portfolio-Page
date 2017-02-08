@@ -1,0 +1,122 @@
+// Type Variables
+
+$dark-grey: darkgrey;
+$light-grey: lightgrey;
+$charcoal: rgba(0,0,0,.85);
+
+
+a {
+	text-decoration: none; 
+}
+
+.allwrap {
+	font-family: 'Arsenal', sans-serif;
+}
+
+.brand {
+	font-family: 'Arsenal', sans-serif;
+}
+
+.brand h1 {
+	color: $dark-grey;
+	font-size: 1.5em;
+}
+
+.brand span {
+	color: $light-grey;
+	font-weight: bold;
+}
+
+.smallscreen-nav ul li a {
+	line-height: 42px;
+	font-size: 1.75em;
+	padding: 16px 40px;
+	color: white;
+}
+
+.widescreen-nav ul li a {
+	font-size: 1.25em;
+	color: $dark-grey;
+}
+
+.section-title {
+	font-size: 1.75em;
+	color: black;
+}
+
+.projects figure a {
+	color: $charcoal;
+}
+
+.project-title {
+	padding-bottom: 10px;
+	color: $charcoal;
+	font-weight: 400;
+}
+
+.projects figcaption p {
+	font-size: 1em;
+	line-height: 18px;
+	color: $charcoal;
+}
+
+.training {
+	
+	.program {
+		font-size: 1.25em;
+		padding-bottom: 10px;
+	}
+
+	p {
+		line-height: 20px;
+	}
+}
+
+.email a {
+	color: $light-grey;
+}
+
+.overlay-content .pcc {
+	text-align: left;
+	color: #fff;
+}
+
+// Tablet Sizes
+
+@media (min-width: 600px) {
+	.allwrap {
+		font-size: 130%;
+	}
+
+ 	.projects figcaption p {
+		line-height: 24px;
+	}
+
+	.training p {
+		line-height: 24px;
+	}
+
+	.training ul li {
+		line-height: 24px;
+	}
+
+	.bio .textbox p {
+		line-height: 26px;
+	}
+}
+
+//Desktop Sizes
+@media (min-width: 1200px) {
+ 	.allwrap {
+ 		font-size: 120%
+ 	}
+
+ 	.training {
+ 		.treehouse img {
+ 			width: 220px;
+ 		}
+ 		.pcc img{
+ 			width: 160px;
+ 		}
+ 	}
+ }

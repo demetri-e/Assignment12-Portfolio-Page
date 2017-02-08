@@ -1,0 +1,780 @@
+/* line 13, ../scss/partials/_reset.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+/* line 23, ../scss/partials/_reset.scss */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* line 26, ../scss/partials/_reset.scss */
+body {
+  line-height: 1;
+}
+
+/* line 29, ../scss/partials/_reset.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 32, ../scss/partials/_reset.scss */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 36, ../scss/partials/_reset.scss */
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* line 40, ../scss/partials/_reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 1, ../scss/partials/_layout.scss */
+img {
+  width: 100%;
+}
+
+/* line 5, ../scss/partials/_layout.scss */
+.brand {
+  font-size: 1.5em;
+  display: inline-block;
+  position: relative;
+  margin: .5em 0 0 .5em;
+}
+
+/* line 12, ../scss/partials/_layout.scss */
+main {
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 1em;
+}
+
+/* line 18, ../scss/partials/_layout.scss */
+.mainImage-holder {
+  width: 100%;
+  height: 400px;
+  background-image: url("../images/trees-web.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 1.5em;
+  margin-bottom: 2em;
+  text-align: center;
+}
+
+/* line 29, ../scss/partials/_layout.scss */
+.section-title {
+  margin-bottom: 1em;
+  text-align: center;
+}
+
+/* line 34, ../scss/partials/_layout.scss */
+section {
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 2em;
+}
+
+/* line 40, ../scss/partials/_layout.scss */
+.projects figure {
+  text-align: center;
+  box-sizing: border-box;
+  margin-bottom: 2em;
+  cursor: pointer;
+  padding: 20px 0 20px 0;
+  opacity: .9;
+  transition: background-color 0.5s ease;
+}
+
+/* line 50, ../scss/partials/_layout.scss */
+.projects figure:hover {
+  background: rgba(0, 0, 0, 0.039);
+  opacity: 1;
+}
+
+/* line 55, ../scss/partials/_layout.scss */
+.projects figcaption {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* line 60, ../scss/partials/_layout.scss */
+.training ul {
+  margin-top: 12px;
+  padding-left: 3em;
+}
+/* line 64, ../scss/partials/_layout.scss */
+.training ul li {
+  line-height: 20px;
+  list-style-type: disc;
+}
+/* line 69, ../scss/partials/_layout.scss */
+.training ul span {
+  padding-left: 6px;
+  font-size: .75em;
+}
+
+/* line 75, ../scss/partials/_layout.scss */
+.treehouse {
+  margin-bottom: 2em;
+}
+/* line 78, ../scss/partials/_layout.scss */
+.treehouse img {
+  width: 160px;
+  padding-bottom: 6px;
+}
+
+/* line 84, ../scss/partials/_layout.scss */
+.pcc img {
+  width: 130px;
+  padding-bottom: 6px;
+}
+
+/* line 89, ../scss/partials/_layout.scss */
+.showList {
+  font-size: .8em;
+  margin-left: 3em;
+  margin-top: 10px;
+  background-color: rgba(0, 0, 0, 0.3);
+  line-height: 24px;
+  color: #fff;
+  border-radius: 4px;
+  opacity: .9;
+  display: inline-block;
+  padding: 4px 8px;
+  cursor: pointer;
+  box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.4);
+  transition: .5s ease;
+}
+
+/* line 105, ../scss/partials/_layout.scss */
+.showList:hover {
+  background: rgba(0, 0, 0, 0.85);
+}
+
+/* line 109, ../scss/partials/_layout.scss */
+.badges {
+  text-align: center;
+}
+/* line 111, ../scss/partials/_layout.scss */
+.badges ul {
+  padding: 0;
+}
+/* line 114, ../scss/partials/_layout.scss */
+.badges li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 10px 10px;
+}
+/* line 119, ../scss/partials/_layout.scss */
+.badges img {
+  width: 40px;
+  opacity: .8;
+}
+
+/* line 125, ../scss/partials/_layout.scss */
+.bio {
+  display: flex;
+  flex-wrap: wrap;
+  background: black;
+  color: #fff;
+  padding: 40px 20px 60px 20px;
+}
+/* line 133, ../scss/partials/_layout.scss */
+.bio .shrinkwrap {
+  max-width: 700px;
+  margin: 0 auto;
+}
+/* line 137, ../scss/partials/_layout.scss */
+.bio .self-portrait {
+  width: 26%;
+  max-width: 120px;
+  border-radius: 50%;
+  border: 2px solid lightgrey;
+  float: right;
+  margin: 16px 6px 6px 2px;
+  position: relative;
+  left: 10px;
+}
+/* line 147, ../scss/partials/_layout.scss */
+.bio .textbox {
+  padding-top: 10px;
+}
+/* line 150, ../scss/partials/_layout.scss */
+.bio .textbox p {
+  line-height: 20px;
+}
+/* line 154, ../scss/partials/_layout.scss */
+.bio .textbox .email {
+  padding-top: 1em;
+}
+/* line 158, ../scss/partials/_layout.scss */
+.bio .textbox ul {
+  padding-top: 2em;
+  display: inline-block;
+}
+/* line 161, ../scss/partials/_layout.scss */
+.bio .textbox ul li {
+  display: inline-block;
+}
+/* line 164, ../scss/partials/_layout.scss */
+.bio .textbox ul li img {
+  width: 50px;
+}
+
+@media (min-width: 800px) {
+  /* line 174, ../scss/partials/_layout.scss */
+  main {
+    margin-top: 2em;
+  }
+
+  /* line 178, ../scss/partials/_layout.scss */
+  .projects {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 0;
+  }
+  /* line 183, ../scss/partials/_layout.scss */
+  .projects figure {
+    width: 50%;
+    padding: 20px 20px;
+  }
+  /* line 187, ../scss/partials/_layout.scss */
+  .projects img {
+    width: 90%;
+  }
+
+  /* line 192, ../scss/partials/_layout.scss */
+  .allwrap {
+    max-width: 2400px;
+    margin: 0 auto;
+  }
+
+  /* line 197, ../scss/partials/_layout.scss */
+  .training {
+    display: flex;
+  }
+  /* line 201, ../scss/partials/_layout.scss */
+  .training .treehouse,
+  .training .pcc {
+    padding: 0 60px;
+  }
+
+  /* line 206, ../scss/partials/_layout.scss */
+  .pcc img {
+    width: 106px;
+    padding-bottom: 6px;
+  }
+
+  /* line 211, ../scss/partials/_layout.scss */
+  .badges ul li img {
+    width: 50px;
+  }
+
+  /* line 215, ../scss/partials/_layout.scss */
+  .bio {
+    display: flex;
+    max-width: 1240px;
+  }
+
+  /* line 220, ../scss/partials/_layout.scss */
+  .self-portrait {
+    width: 18%;
+  }
+
+  /* line 224, ../scss/partials/_layout.scss */
+  .message {
+    display: none;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 231, ../scss/partials/_layout.scss */
+  main {
+    max-width: 1600px;
+  }
+
+  /* line 235, ../scss/partials/_layout.scss */
+  .projects figure {
+    width: 33.3333%;
+  }
+
+  /* line 240, ../scss/partials/_layout.scss */
+  .treehouse,
+  .pcc {
+    width: 36%;
+    margin: 0 auto;
+  }
+}
+/* line 2, ../scss/partials/_slidedown.scss */
+.message {
+  background: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  top: -250px;
+  left: 0;
+  width: 100%;
+  height: 250px;
+  padding: 20px;
+  transition: top 300ms cubic-bezier(0.17, 0.04, 0.03, 0.94);
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+/* line 16, ../scss/partials/_slidedown.scss */
+#toggle {
+  position: absolute;
+  appearance: none;
+  cursor: pointer;
+  left: -100%;
+  top: -100%;
+}
+
+/* line 24, ../scss/partials/_slidedown.scss */
+#toggle + label {
+  position: absolute;
+  cursor: pointer;
+  border-radius: 3px;
+  color: #FFF;
+  text-align: center;
+  -webkit-font-smoothing: antialiased;
+  cursor: pointer;
+  right: 1em;
+  margin-top: 6px;
+  transition: all 500ms ease;
+  opacity: .4;
+}
+
+/* line 37, ../scss/partials/_slidedown.scss */
+#toggle + label:after {
+  content: url("../images/icons/arrow-down.png");
+}
+
+/* line 41, ../scss/partials/_slidedown.scss */
+.container {
+  transition: margin 300ms cubic-bezier(0.17, 0.04, 0.03, 0.94);
+}
+
+/* line 45, ../scss/partials/_slidedown.scss */
+#toggle:checked ~ .message {
+  top: 0;
+}
+
+/* line 49, ../scss/partials/_slidedown.scss */
+#toggle:checked ~ .container {
+  margin-top: 250px;
+}
+
+/* line 57, ../scss/partials/_slidedown.scss */
+#toggle:checked + label:after {
+  content: url("../images/icons/arrow-up.png");
+}
+
+@media (min-width: 800px) {
+  /* line 63, ../scss/partials/_slidedown.scss */
+  .checkbox {
+    display: none;
+  }
+
+  /* line 67, ../scss/partials/_slidedown.scss */
+  #toggle + label {
+    display: none;
+  }
+}
+/* line 8, ../scss/partials/_typography.scss */
+a {
+  text-decoration: none;
+}
+
+/* line 12, ../scss/partials/_typography.scss */
+.allwrap {
+  font-family: 'Arsenal', sans-serif;
+}
+
+/* line 16, ../scss/partials/_typography.scss */
+.brand {
+  font-family: 'Arsenal', sans-serif;
+}
+
+/* line 20, ../scss/partials/_typography.scss */
+.brand h1 {
+  color: darkgrey;
+  font-size: 1.5em;
+}
+
+/* line 25, ../scss/partials/_typography.scss */
+.brand span {
+  color: lightgrey;
+  font-weight: bold;
+}
+
+/* line 30, ../scss/partials/_typography.scss */
+.smallscreen-nav ul li a {
+  line-height: 42px;
+  font-size: 1.75em;
+  padding: 16px 40px;
+  color: white;
+}
+
+/* line 37, ../scss/partials/_typography.scss */
+.widescreen-nav ul li a {
+  font-size: 1.25em;
+  color: darkgrey;
+}
+
+/* line 42, ../scss/partials/_typography.scss */
+.section-title {
+  font-size: 1.75em;
+  color: black;
+}
+
+/* line 47, ../scss/partials/_typography.scss */
+.projects figure a {
+  color: rgba(0, 0, 0, 0.85);
+}
+
+/* line 51, ../scss/partials/_typography.scss */
+.project-title {
+  padding-bottom: 10px;
+  color: rgba(0, 0, 0, 0.85);
+  font-weight: 400;
+}
+
+/* line 57, ../scss/partials/_typography.scss */
+.projects figcaption p {
+  font-size: 1em;
+  line-height: 18px;
+  color: rgba(0, 0, 0, 0.85);
+}
+
+/* line 65, ../scss/partials/_typography.scss */
+.training .program {
+  font-size: 1.25em;
+  padding-bottom: 10px;
+}
+/* line 70, ../scss/partials/_typography.scss */
+.training p {
+  line-height: 20px;
+}
+
+/* line 75, ../scss/partials/_typography.scss */
+.email a {
+  color: lightgrey;
+}
+
+/* line 79, ../scss/partials/_typography.scss */
+.overlay-content .pcc {
+  text-align: left;
+  color: #fff;
+}
+
+@media (min-width: 600px) {
+  /* line 87, ../scss/partials/_typography.scss */
+  .allwrap {
+    font-size: 130%;
+  }
+
+  /* line 91, ../scss/partials/_typography.scss */
+  .projects figcaption p {
+    line-height: 24px;
+  }
+
+  /* line 95, ../scss/partials/_typography.scss */
+  .training p {
+    line-height: 24px;
+  }
+
+  /* line 99, ../scss/partials/_typography.scss */
+  .training ul li {
+    line-height: 24px;
+  }
+
+  /* line 103, ../scss/partials/_typography.scss */
+  .bio .textbox p {
+    line-height: 26px;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 110, ../scss/partials/_typography.scss */
+  .allwrap {
+    font-size: 120%;
+  }
+
+  /* line 115, ../scss/partials/_typography.scss */
+  .training .treehouse img {
+    width: 220px;
+  }
+  /* line 118, ../scss/partials/_typography.scss */
+  .training .pcc img {
+    width: 160px;
+  }
+}
+/* line 3, ../scss/partials/_navigation.scss */
+.smallscreen-nav {
+  text-align: center;
+}
+
+/* line 9, ../scss/partials/_navigation.scss */
+.widescreen-nav {
+  display: none;
+}
+
+@media (min-width: 800px) {
+  /* line 14, ../scss/partials/_navigation.scss */
+  .widescreen-nav {
+    display: inline-block;
+    position: relative;
+    float: right;
+  }
+  /* line 19, ../scss/partials/_navigation.scss */
+  .widescreen-nav ul {
+    margin: 1.5em 1.5em;
+  }
+  /* line 23, ../scss/partials/_navigation.scss */
+  .widescreen-nav ul li {
+    display: inline-block;
+    padding: 0 10px;
+  }
+}
+/* line 1, ../scss/partials/_overlay.scss */
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: black;
+  background-color: rgba(0, 0, 0, 0.85);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+/* line 14, ../scss/partials/_overlay.scss */
+.overlay-content {
+  position: relative;
+  top: 12%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+/* line 22, ../scss/partials/_overlay.scss */
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+/* line 31, ../scss/partials/_overlay.scss */
+.overlay .pcc {
+  background: #fff;
+  padding: 10px;
+  color: rgba(0, 0, 0, 0.9);
+  font-family: 'Arsenal', sans-serif;
+  padding-left: 4em;
+  padding-bottom: 4em;
+}
+
+/* line 41, ../scss/partials/_overlay.scss */
+.overlay .program {
+  font-size: 1.5em;
+}
+/* line 44, ../scss/partials/_overlay.scss */
+.overlay .completed-classes {
+  padding-top: 6px;
+  font-size: .8em;
+}
+/* line 49, ../scss/partials/_overlay.scss */
+.overlay ul {
+  padding-top: 1em;
+  line-height: 24px;
+}
+/* line 53, ../scss/partials/_overlay.scss */
+.overlay ul span {
+  font-size: .8em;
+  margin-left: 6px;
+}
+
+/* line 61, ../scss/partials/_overlay.scss */
+.overlay .school-logo {
+  width: 200px;
+}
+
+/* line 65, ../scss/partials/_overlay.scss */
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+/* line 69, ../scss/partials/_overlay.scss */
+.overlay .closebtn {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  /* line 77, ../scss/partials/_overlay.scss */
+  .overlay a {
+    font-size: 20px;
+  }
+
+  /* line 78, ../scss/partials/_overlay.scss */
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+/*----- Animations ----------*/
+/* make keyframes that tell the start state and the end state of our object */
+@-webkit-keyframes fadeIn {
+  /* line 4, ../scss/partials/_animations.scss */
+  from {
+    opacity: 0;
+  }
+
+  /* line 4, ../scss/partials/_animations.scss */
+  to {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  /* line 5, ../scss/partials/_animations.scss */
+  from {
+    opacity: 0;
+  }
+
+  /* line 5, ../scss/partials/_animations.scss */
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  /* line 6, ../scss/partials/_animations.scss */
+  from {
+    opacity: 0;
+  }
+
+  /* line 6, ../scss/partials/_animations.scss */
+  to {
+    opacity: 1;
+  }
+}
+
+/* line 8, ../scss/partials/_animations.scss */
+.fade-in {
+  opacity: 0;
+  /* make things invisible upon start */
+  -webkit-animation: fadeIn ease-in 1;
+  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+  -moz-animation: fadeIn ease-in 1;
+  animation: fadeIn ease-in 1;
+  -webkit-animation-fill-mode: forwards;
+  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+  -moz-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 1s;
+  -moz-animation-duration: 1s;
+  animation-duration: 1s;
+}
+
+/* line 23, ../scss/partials/_animations.scss */
+.fade-in.one {
+  -webkit-animation-delay: 0.7s;
+  -moz-animation-delay: 0.7s;
+  animation-delay: 0.7s;
+}
+
+/* line 29, ../scss/partials/_animations.scss */
+.fade-in.two {
+  -webkit-animation-delay: 1s;
+  -moz-animation-delay: 1s;
+  animation-delay: 1s;
+}
+
+/* line 35, ../scss/partials/_animations.scss */
+.fade-in.three {
+  -webkit-animation-delay: 2s;
+  -moz-animation-delay: 2s;
+  animation-delay: 2s;
+}
+
+/* line 41, ../scss/partials/_animations.scss */
+.fade-in.four {
+  -webkit-animation-delay: 3s;
+  -moz-animation-delay: 3s;
+  animation-delay: 3s;
+}
+
+/* line 47, ../scss/partials/_animations.scss */
+.fade-in.five {
+  -webkit-animation-delay: 4s;
+  -moz-animation-delay: 4s;
+  animation-delay: 4s;
+}
+
+/* line 53, ../scss/partials/_animations.scss */
+.fade-in.six {
+  -webkit-animation-delay: 5s;
+  -moz-animation-delay: 5s;
+  animation-delay: 5s;
+}
+
+/* line 61, ../scss/partials/_animations.scss */
+.animations {
+  position: relative;
+  top: 240px;
+  text-align: left;
+  float: right;
+  width: 190px;
+}
+/* line 68, ../scss/partials/_animations.scss */
+.animations p {
+  background: rgba(225, 225, 225, 0.45);
+  font-size: 1.75em;
+  color: rgba(0, 0, 0, 0.75);
+  padding-left: 10px;
+}
+/* line 76, ../scss/partials/_animations.scss */
+.animations .design {
+  text-transform: lowercase;
+  padding-top: 10px;
+}
+/* line 80, ../scss/partials/_animations.scss */
+.animations .develop {
+  text-transform: lowercase;
+}
+/* line 84, ../scss/partials/_animations.scss */
+.animations .demetri {
+  padding-bottom: 6px;
+}

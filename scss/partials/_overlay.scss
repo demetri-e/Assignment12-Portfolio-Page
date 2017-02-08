@@ -1,0 +1,83 @@
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.85);
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content {
+    position: relative;
+    top: 12%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay .pcc {
+    background: #fff;
+    padding: 10px;
+    color: rgba(0,0,0,.9);
+    font-family: 'Arsenal', sans-serif;
+    padding-left: 4em;
+    padding-bottom: 4em;
+}
+
+.overlay {
+    .program {
+        font-size: 1.5em;
+    }
+    .completed-classes {
+        padding-top: 6px;
+        font-size: .8em;
+    }
+
+    ul {
+        padding-top: 1em;
+        line-height: 24px;
+
+            span {
+                font-size: .8em;
+                margin-left: 6px;
+            }
+    }
+}
+
+
+.overlay .school-logo {
+    width: 200px;
+}
+
+.overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
